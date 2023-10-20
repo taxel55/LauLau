@@ -1,0 +1,100 @@
+.logo{
+    position: absolute;
+    width: 6.5rem;
+    height: 6rem;
+    left: 4rem;
+    top: 2rem;
+}
+
+.Lau{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 29.73%;
+    
+    font-family: 'Averia Gruesa Libre';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 2rem;
+    color: #06156F;
+}
+
+.lau{
+    position: absolute;
+    left: 20%;
+    right: 0%;
+    top: 35.14%;
+
+    font-family: 'Averia Gruesa Libre';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 1rem;
+    color: #183EC7;
+}
+
+.font-family-inter{
+    font-family: 'Inter';
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="tel"],
+  textarea,
+  input[type="email"],
+  input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 12px;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+.relative{
+    left: 150px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }

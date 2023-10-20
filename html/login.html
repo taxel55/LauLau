@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laulau</title>
+    <!-- Tailwind Framework -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Averia Gruesa Libre font -->
+    <link href="https://fonts.cdnfonts.com/css/averia-gruesa-libre" rel="stylesheet">
+    <!-- Inter font -->
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <!-- CSS manual -->
+    <link rel="stylesheet" href="../css/loginCSS.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"  rel="stylesheet" />
+</head>
+<body class="">
+    <div class="page-container">
+        <div class="upperbg h-[28rem] bg-no-repeat bg-[url('../assets/BackgroundLogin.png')]">
+            <div class="lowerbg h-[28rem] bg-no-repeat bg-[url('../assets/BackgroundLogin2.png')]">
+                <div class="logo">
+                    <div class="Lau">Lau</div>
+                    <div class="lau">lau</div>
+                </div>
+            </div>
+        </div>
+        <div class="Frame-45">
+            <div class="sign-in">
+                Sign In
+            </div>
+            <div class="w-full max-w-xs">
+                  <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                      Email
+                    </label>
+                    <input onkeyup="validateForm()" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="example@mail.com">
+                  </div>
+
+                  <div class="mb-2">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                      Password
+                    </label>
+                    <input onkeyup="validateForm()" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Enter Password">
+                  </div>
+
+                  <div class="mb-2">
+                    <p class="text-sm text-red-500" id="errorMsg"></p>
+                  </div>
+
+                  <div class="flex items-center justify-between">
+                    <a id="signinButton" class=" ml-28 disabled-link" href="./home.html"><button id="disabledButton" class="disabled-button bg-[#93c5fd] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                      Sign In
+                    </button></a>
+                  </div>
+              </div>
+              <p class="text-xs">Register Your Account? <a href="./register.html" class="font-bold text-sm text-blue-500 hover:text-blue-800">Sign Up</a></p>
+        </div>
+    </div>
+
+    <script defer src="../js/loginValidator.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+</body>
+</html>

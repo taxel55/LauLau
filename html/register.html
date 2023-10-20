@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laulau</title>
+    <!-- Tailwind Framework -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Datepicker -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/datepicker.min.js"></script>
+    <!-- Averia Gruesa Libre font -->
+    <link href="https://fonts.cdnfonts.com/css/averia-gruesa-libre" rel="stylesheet">
+    <!-- Inter font -->
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <!-- CSS manual -->
+    <link rel="stylesheet" href="../css/registerCSS.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"  rel="stylesheet" />
+</head>
+<body class="">
+    <div class="page-container">
+        <div class="upperbg h-[28rem] bg-no-repeat bg-[url('../assets/BackgroundLogin.png')]">
+            <div class="lowerbg h-[28rem] bg-no-repeat bg-[url('../assets/BackgroundLogin2.png')]">
+                <div class="logo">
+                    <div class="Lau">Lau</div>
+                    <div class="lau">lau</div>
+                </div>
+            </div>
+        </div>
+        <div class="Frame-45">
+            <div class="sign-up">
+                Sign Up
+            </div>
+            <div class="w-full max-w-xs">
+                  <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                      Email
+                    </label>
+                    <input onkeyup="validateForm()" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="example@mail.com">
+                  </div>
+
+                  <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="fullname">
+                      Full Name
+                    </label>
+                    <input onkeyup="validateForm()" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="fullname" type="text" placeholder="Full Name">
+                  </div>
+
+                  <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="phoneNumber">
+                    Phone Number
+                    </label>
+                    <input onkeyup="validateForm()" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="phoneNumber" type="text" placeholder="08xxxxxxxx">
+                  </div>
+
+                  <div class="flex flex-wrap mb-4">
+                    <div class="flex items-center mr-4">
+                        <input  id="pria" type="radio" value="" name="gender" class="w-4 h-4 text-purple-600 bg-gray-100 border-gray-300 focus:ring-purple-500">
+                        <label for="pria" class="ml-2 text-sm font-medium">Man</label>
+                    </div>
+
+                    <div class="flex items-center mr-4">
+                        <input checked id="wanita" type="radio" value="" name="gender" class="w-4 h-4 text-purple-600 bg-gray-100 border-gray-300 focus:ring-purple-500">
+                        <label for="wanita" class="ml-2 text-sm font-medium">Woman</label>
+                    </div>
+                  </div>
+
+                  <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="birthday">
+                    Birthdate
+                    </label>
+                    <input onchange="validateForm()" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="birthday" type="date">
+                  </div>
+
+                  <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                      Password
+                    </label>
+                    <input onkeyup="validateForm()" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Password">
+                  </div>
+
+                  <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="confirmPassword">
+                      Confirm Password
+                    </label>
+                    <input onkeyup="validateForm()" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="confirmPassword" type="password" placeholder="Confirm Password">
+                  </div>
+
+                  <div class="mb-2">
+                    <p class="text-sm text-red-500" id="errorMsg"></p>
+                  </div>
+
+                  <div class="flex items-center justify-between">
+                    <a href="./home.html" id="signupButton" class="disabled-link"><button id="disabledButton" class="disabled-button ml-28 bg-[#93c5fd] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                      Sign Up
+                    </button></a>
+                  </div>
+              </div>
+              <p class="text-xs">Already have an account? <a href="./login.html" class="font-bold text-sm text-blue-500 hover:text-blue-800">Sign In</a></p>
+        </div>
+    </div>
+    <script defer src="../js/registerValidator.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+</body>
+</html>
